@@ -55,10 +55,10 @@ public class HomeController {
 	}
 	
 	/**
-	 * JSON形式で送りつけられたフォームデータを認証できれば名前を返す。JSONで。
+	 * process JSON format request.
 	 * 
-	 * @param loginUser フォームデータ
-	 * @return JSON形式に変えられるJavaBean
+	 * @param loginUser login user mapped from JSON
+	 * @return JavaBean mapped to JSON format
 	 */
 	@RequestMapping(value="/postJson", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody ValidUser postJson(@RequestBody LoginUser loginUser) {
