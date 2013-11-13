@@ -87,14 +87,9 @@ function() {
 function getImageElement() {
 	var img;
 	if ($('#imgtarget').get(0)) {
-		// 要素あり
-		console.debug('要素あり');
 		img = $('#imgtarget');
 		return img;
 	}
-	// 要素無し
-	console.debug('要素なし');
 	img = $('#image').append('<img id="imgtarget"></img>').children();
-	console.debug(img);
 	return img;
 }
